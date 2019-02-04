@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<title>Sort_by_price</title>
+	<meta charset="utf-8">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/jq.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- <link href="css/theme.default.min.css" rel="stylesheet"> -->
+	<script src="js/jquery-1.2.6.min.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+	<script src="js/jquery.tablesorter.widgets.min.js"></script>
+	<script>
+	$(function(){
+	$('table').tablesorter({
+		widgets        : ['zebra', 'columns'],
+		usNumberFormat : false,
+		sortReset      : true,
+		sortRestart    : true
+	});
+});
+</script>
+  </head>
+<table class="tablesorter">
+	<thead>
+	<tr>
+	<td>ID</td>
+	<td>Наименование товара</td>
+	<td>в упак</td>
+	<td class="sortable"><a href="#">Цена</a></td>
+	</tr>
+	</thead>
+	<tr>
+		<td>001</td>
+		<td>Item 1</td>
+		<td>12шт</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>002</td>
+		<td>Item 2</td>
+		<td>12шт</td>
+		<td>40</td>
+	</tr>
+	<tr>
+		<td>003</td>
+		<td>Item 3</td>
+		<td>12шт</td>
+		<td>37,5</td>
+	</tr>
+	<tr>
+		<td>004</td>
+		<td>Item 4</td>
+		<td>12шт</td>
+		<td>100</td>
+	</tr>
+	</table>
+
+</html>
